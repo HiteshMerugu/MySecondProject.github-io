@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Second Project</title>
+    <link rel="stylesheet" href="./assets/css/Sproject.css">
+    <link rel="icon" type="image/png" href="./assets/images/icons/hiteshIcon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="header">
+            <div class="bg-op">
+                <div class="navbar-active">
+                    <div class="navbar-header max-width">
+                        <div class="toggle-flex">
+                            <div class="logo">
+                            </div>
+                            <div class="toggle" onclick="hideFunction('nav') ">
+                                <!-- <div class="toggle" onclick='document.getElementById("nav").style.display = "block"'> -->
+                                <i class="fa-solid fa-bars"></i>
+                            </div>
+
+                        </div>
+                        <div class="topnav show" id="nav">
+                            <ul class="nav">
+                                <li><a href=#home>Home</a></li>
+                                <li><a href=#aboutus>About Us</a></li>
+                                <li><a href=#portfolio>Portfolio</a></li>
+                                <li><a href=#blog>Blog</a></li>
+                                <li class="cancel"><a href=#contactus>Contact US</a>
+                                    <!-- <div class="toggle" onclick='document.getElementById("nav").style.display = "none"'> 
+                                        <i class="fa-solid fa-x"></i> -->
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <script>
+
+                    // first way
+                    function hideFunction() {
+                        if (document.getElementById("nav").classList.contains('show')) {
+                            document.getElementById("nav").classList.remove('show');
+                        } else {
+                            document.getElementById("nav").classList.add('show');
+                        }
+                    }
+
+                    //secend way 
+                    var x = 0;
+                    function hideFunctiontwo() {
+                        if (x == '0') {
+                            document.getElementById("nav").style.display = "block";
+                            x = '10';
+                        } else {
+                            x = 0;
+                            document.getElementById("nav").style.display = "none";
+                        }
+                    }
+
+                </script>
+
+
+
+                <div class="middle-text max-width">
+                    <span id="home">DESING IS A HOBBY</span>
+                    <h2>RESPONSIVE LAYOUT</h2>
+                    <p>Integer ut dolor eget magna congue gravida ut at arcu. Vivamus maximus neque quis luctus
+                        tempus.
+                        Vestibulum consequat.</p>
+                    <div class="primary-button">
+                        <a href="#">View Details</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="container">
+
+            <div class="max-width">
+                <div class="heading">
+                    <h4 id="aboutus"> WHAT WE DO </h4>
+                    <div class="underline"></div>
+                </div>
+
+                <div class="flex-container">
+                    <div class="box-container">
+
+                        <div class="icon">
+                            <img src="/assets/images/icons/icon1.png" alt="penIcon">
+                        </div>
+
+                        <h4>Easy Customizations</h4>
+                        <p>Meteor is free HTML website template by Tooplate. Feel free to use this layout for your
+                            project.
+                        </p>
+
+                    </div>
+
+                    <div class="box-container">
+                        <div class="content">
+                            <div class="icon">
+                                <img src="/assets/images/icons/icon2.png" alt="penIcon">
+                            </div>
+
+                            <h4>Creative Ideas</h4>
+                            <p>Biodiesel schltz suculents phone cliche ramps snackwave coloring book tumeric poke,
+                                typewriter.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="box-container">
+                        <div class="content">
+                            <div class="icon">
+                                <img src="/assets/images/icons/icon3.png" alt="penIcon">
+                            </div>
+
+                            <h4>Good Profit</h4>
+                            <p>Biodiesel schltz suculents phone cliche ramps snackwave coloring book tumeric poke,
+                                typewriter.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="box-container">
+                        <div class="content">
+                            <div class="icon">
+                                <img src="/assets/images/icons/icon4.png" alt="penIcon">
+                            </div>
+
+                            <h4>Open To Public</h4>
+                            <p>Biodiesel schltz suculents phone cliche ramps snackwave coloring book tumeric poke,
+                                typewriter.
+                            </p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container2">
+            <div class="bg-opacity1">
+                <div class="max-width">
+                    <div class=" both-container">
+                        <div class="left-container">
+
+                            <h4> New offers just arrived,
+                                <br>
+                                Get in now and take profit.
+                            </h4>
+
+                            <p>
+                                Gochujang pitchfork post-ironic hammock kombucha fanny pack cronut.
+                                Raw denim chicharrones semiotics af truffaut pinterest. Distillery letterpress authentic
+                                adaptogen.
+                                Meditation schlitz humblebrag photo booth celiac cliche chartreuse.
+                                <br><br>
+                                Pinterest 90's wolf celiac dreamcatcher listicle deep v semiotics.
+                                Intelligentsia literally meggings trust fund put a bird on it.
+                                Shoreditch crucifix artisan pug shaman twee.
+                                Health goth bicycle rights retro iPhone.
+
+                            </p>
+
+                            <div class="button">
+                                <div class="primary-button">
+                                    <a class="disBtn" href="#">DISCOVER MORE</a>
+                                </div>
+                                <div class="primary-button">
+                                    <a href="#">PURCHASE NOW</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="right-container">
+                            <div class="img-box1">
+                                <img src="/assets/images/foodImg1.jpg" alt="fooodImg">
+                            </div>
+                            <div class="img-box2">
+                                <img src="/assets/images/foodimg2.jpg" alt="fooodImg">
+                            </div>
+                            <div class="img-box3">
+                                <img src="/assets/images/foodImg3.jpg" alt="fooodImg">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+
+            <div class="max-width">
+                <div class="heading">
+                    <h4 id="portfolio">OUR PORTFOLIO</h4>
+                    <div class="underline"></div>
+                </div>
+                <div class="navbar">
+                    <ul class="mid-nav">
+                        <li><a href=#all>All</a></li>
+                        <li><a href=#nature>Nature</a></li>
+                        <li><a href=#workspace>Workspace</a></li>
+                        <li><a href=#city>City</a></li>
+                        <li><a href=#technology>Technology</a></li>
+                    </ul>
+                </div>
+                <div class="grid-container1">
+
+                    <div class="image">
+                        <img src="/assets/images/portfolioImg1.jpg" alt="portFImg">
+                    </div>
+
+
+                    <div class="image">
+                        <img src="/assets/images/portfolioImg2.jpg" alt="portFImg">
+                    </div>
+
+                    <div class="image">
+                        <img src="/assets/images/portfolioImg3.jpg" alt="portFImg">
+                    </div>
+
+                    <div class="image">
+                        <img src="assets/images/portfolioImg4.jpg" alt="portFImg">
+                    </div>
+
+                    <div class="image">
+                        <img src="/assets/images/portfolioImg5.jpg" alt="portFImg">
+                    </div>
+
+
+                    <div class="image">
+                        <img src="/assets/images/portfolioImg6.jpg" alt="portFImg">
+                    </div>
+
+                    <div class="image">
+                        <img src="/assets/images/portfolioImg7.jpg" alt="portFImg">
+                    </div>
+
+                    <div class="image">
+                        <img src="/assets/images/portfolioImg8.jpg" alt="portFImg">
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container3">
+            <div class="bg-opacity">
+                <div class="max-width">
+                    <div class="heading1">
+                        <h4 id="blog">OUR BLOG POSTS</h4>
+                        <div class="underline1"></div>
+                    </div>
+
+                    <div class="grid-container2">
+
+                        <div class="image1" id="item1">
+                            <img src="/assets/images/blogimg1.jpg" class="hoverImg" alt="BlogImg" />
+                            <div class="nested-items1">
+                                <h4>Lorem ipsum dolor sit amet consectetur,</h4>
+                                <span>adipisicing elit. Voluptatem, sit?</span>
+                            </div>
+                        </div>
+
+                        <!-- *************************************************************************************** -->
+                        <!-- <div class="image1" id="item1">
+                            <img src="/assets/images/blogimg1.jpg" class="hoverImg" alt="BlogImg" />
+                            <div class="nested-items1">
+                                <h4>Lorem ipsum dolor sit amet consectetur,</h4>
+                                <span>adipisicing elit. Voluptatem, sit?</span>
+                            </div> -->
+                        <!-- *************************************************************************************** -->
+
+
+
+                        <div class="image1" id="item2">
+                            <img src="/assets/images/blogimg2.jpg" alt="BlogImg">
+                            <div class="nested-items1">
+                                <h4>Lorem ipsum dolor sit amet consectetur,</h4>
+                                <span>adipisicing elit. Voluptatem, sit?</span>
+                            </div>
+                        </div>
+
+
+                        <div class="image1" id="item3">
+                            <img src="/assets/images/blogimg3.jpg" alt="BlogImg">
+                            <div class="nested-items1">
+                                <h4>Lorem ipsum dolor sit amet consectetur,</h4>
+                                <span>adipisicing elit. Voluptatem, sit?</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container4">
+            <div class="max-width">
+
+                <div class="grid-container1">
+
+                    <div class="box">
+                        <div class=num>926</div>
+                        <span>REGULAR VISITORS</span>
+
+                    </div>
+
+
+                    <div class="box">
+                        <div class=num>214</div>
+                        <span>FINISHED PROJECTS</span>
+                    </div>
+
+                    <div class="box">
+                        <div class=num>118</div>
+                        <span>HAPPY CILENTS</span>
+                    </div>
+
+                    <div class="box">
+                        <div class=num>16</div>
+                        <span>TOTAL AWARDS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container5">
+            <div class="bg-opacity">
+                <div class="max-width">
+                    <div class="heading1">
+                        <h4 id="contactus">CONTACT US</h4>
+                        <div class="underline1"></div>
+                    </div>
+                    <div class=" form-container">
+                        <div class="rightContainer">
+                            <form action="#">
+
+                                <div class="group-container">
+                                    <div class="input-group">
+                                        <input type="text" id="name" placeholder="Your name...">
+                                    </div>
+
+                                    <div class="input-group">
+                                        <input type="text" id="name" placeholder="Your email...">
+                                    </div>
+                                </div>
+                                <div>
+                                    <textarea name="message" rows="11" placeholder="Your message..."></textarea>
+                                </div>
+                                <div class="primary-button">
+                                    <a href="#">View Details</a>
+                                </div>
+
+                            </form>
+                        </div>
+                        <div class="leftContainer">
+                            <img src="/assets/images/footerMapImg.jpg" alt="mapImg" />
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <footer>
+            <div class="max-width">
+
+                <div class="copyright-text">
+                    <p>Copyright &#x24B8; 2017 Company Name - Design:
+                        <a href="http://www.tooplate.com" target="_blank">Tooplate</a>
+                    </p>
+                    <div class="icons">
+                        <ul>
+                            <li>
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-solid fa-rss"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+        </footer>
+
+
+    </div>
+
+</body>
+
+</html>
